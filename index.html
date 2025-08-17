@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nova — Clean Landing Page</title>
+    <meta name="description" content="A clean, responsive landing page built with just HTML, CSS, and a sprinkle of JS." />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Skip to content for accessibility -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header container">
+      <a href="#" class="logo" aria-label="Nova home">
+        <!-- Simple SVG logo -->
+        <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" class="logo-mark">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="var(--gradient-start)"/>
+              <stop offset="100%" stop-color="var(--gradient-end)"/>
+            </linearGradient>
+          </defs>
+          <path fill="url(#g)" d="M12 2l8.5 5v10L12 22 3.5 17V7z"/>
+        </svg>
+        <span>Nova</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#showcase">Showcase</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-outline small" href="#cta">Get Started</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero container" id="home">
+        <div class="hero-content reveal">
+          <h1>Create Landing Pages that <span class="accent">Convert</span></h1>
+          <p class="lead">Nova is a minimal, responsive template. Clean layout, smooth interactions, and zero framework bloat — perfect for beginners.</p>
+          <div class="hero-ctas">
+            <a class="btn" href="#cta">Start Free</a>
+            <a class="btn btn-ghost" href="#features">See Features</a>
+          </div>
+          <ul class="trust-logos" aria-label="Trusted by">
+            <li><span class="chip">Fast</span></li>
+            <li><span class="chip">Accessible</span></li>
+            <li><span class="chip">Responsive</span></li>
+          </ul>
+        </div>
+        <div class="hero-media reveal" aria-hidden="true">
+          <div class="device-frame">
+            <div class="screen">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dash"></div>
+              <div class="dash short"></div>
+              <div class="dash"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="section container" id="features">
+        <header class="section-head reveal">
+          <h2>Everything you need</h2>
+          <p>Build faster with a solid foundation: grid layout, spacing system, and reusable components.</p>
+        </header>
+        <div class="grid features-grid">
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">⚡</div>
+            <h3>Performance-first</h3>
+            <p>Pure HTML/CSS/JS with no heavy dependencies. Instant loads and smooth interactions.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">🎯</div>
+            <h3>Pixel-precise</h3>
+            <p>Use consistent spacing, alignment, and a curated color palette that just works.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">🧩</div>
+            <h3>Modular</h3>
+            <p>Cards, buttons, badges, and sections you can mix-and-match for any landing page.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">🔒</div>
+            <h3>Accessible</h3>
+            <p>Semantic HTML, focus styles, and keyboard-friendly navigation out of the box.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SHOWCASE -->
+      <section class="section container" id="showcase">
+        <header class="section-head reveal">
+          <h2>Showcase your product</h2>
+          <p>Drop screenshots or illustrations here. The grid is responsive and gap-perfect.</p>
+        </header>
+        <div class="grid gallery">
+          <figure class="gallery-item reveal"><div class="ph"></div><figcaption>Dashboard</figcaption></figure>
+          <figure class="gallery-item reveal"><div class="ph"></div><figcaption>Analytics</figcaption></figure>
+          <figure class="gallery-item reveal"><div class="ph"></div><figcaption>Reports</figcaption></figure>
+          <figure class="gallery-item reveal"><div class="ph"></div><figcaption>Automations</figcaption></figure>
+          <figure class="gallery-item reveal"><div class="ph"></div><figcaption>Integrations</figcaption></figure>
+          <figure class="gallery-item reveal"><div class="ph"></div><figcaption>Settings</figcaption></figure>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section container testimonials">
+        <header class="section-head reveal">
+          <h2>Loved by makers</h2>
+        </header>
+        <div class="grid testimonials-grid">
+          <blockquote class="card reveal">
+            <p>“The structure is perfect for beginners yet looks professional. Shipped my MVP in a day.”</p>
+            <footer>— Priya S., Indie Hacker</footer>
+          </blockquote>
+          <blockquote class="card reveal">
+            <p>“The spacing scale and color tokens kept everything aligned and consistent.”</p>
+            <footer>— Kunal R., Frontend Student</footer>
+          </blockquote>
+          <blockquote class="card reveal">
+            <p>“No frameworks, no problem. Super fast and clean!”</p>
+            <footer>— Ayesha M., Designer</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- PRICING -->
+      <section class="section container" id="pricing">
+        <header class="section-head reveal">
+          <h2>Simple pricing</h2>
+          <p>Start free. Upgrade when you need more.</p>
+        </header>
+        <div class="pricing-grid">
+          <article class="card price reveal">
+            <h3>Starter</h3>
+            <div class="price-tag">Free</div>
+            <ul class="price-list">
+              <li>1 project</li>
+              <li>Basic components</li>
+              <li>Email support</li>
+            </ul>
+            <a class="btn btn-outline" href="#cta">Choose Starter</a>
+          </article>
+          <article class="card price featured reveal" aria-label="Most popular">
+            <div class="badge">Popular</div>
+            <h3>Pro</h3>
+            <div class="price-tag">₹499<span>/mo</span></div>
+            <ul class="price-list">
+              <li>Unlimited projects</li>
+              <li>All components</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn" href="#cta">Go Pro</a>
+          </article>
+          <article class="card price reveal">
+            <h3>Team</h3>
+            <div class="price-tag">₹1,499<span>/mo</span></div>
+            <ul class="price-list">
+              <li>Everything in Pro</li>
+              <li>Team collaboration</li>
+              <li>Admin controls</li>
+            </ul>
+            <a class="btn btn-outline" href="#cta">Choose Team</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- FAQ (details/summary = no JS needed) -->
+      <section class="section container" id="faq">
+        <header class="section-head reveal">
+          <h2>Frequently asked questions</h2>
+        </header>
+        <div class="faq">
+          <details class="reveal">
+            <summary>Is this good for beginners?</summary>
+            <p>Yes! The code is clean and commented. Tweak the tokens to change the look quickly.</p>
+          </details>
+          <details class="reveal">
+            <summary>Do I need any libraries?</summary>
+            <p>No. It’s built with semantic HTML, modern CSS, and a tiny bit of JavaScript.</p>
+          </details>
+          <details class="reveal">
+            <summary>How do I customize colors?</summary>
+            <p>Edit the CSS variables under <code>:root</code> in <code>styles.css</code>. Everything updates automatically.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta" id="cta">
+        <div class="container cta-inner reveal">
+          <h2>Ready to build your page?</h2>
+          <p class="lead">Fork the template, replace text/images, and publish. That’s it.</p>
+          <form class="cta-form" action="#" method="post" onsubmit="return false">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" type="email" placeholder="Your email" required />
+            <button class="btn" type="submit">Get the template</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© <span id="year"></span> Nova. Crafted with ♥ by you.</p>
+      <a class="back-to-top" href="#home">↑ Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
